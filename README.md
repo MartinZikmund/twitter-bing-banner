@@ -1,1 +1,1 @@
-# twitter-bing-header
+# twitter-bing-banner
