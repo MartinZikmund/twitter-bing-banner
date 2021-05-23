@@ -25,7 +25,7 @@ namespace TwitterBingBanner
         }
 
         [FunctionName("TwitterBannerUpdater")]
-        public async Task Run([TimerTrigger("0 0 0 * * *", RunOnStartup = true)] TimerInfo timer, ILogger log)
+        public async Task Run([TimerTrigger("0 0 0 * * *")] TimerInfo timer, ILogger log)
         {
             Uri bingImageUrl = await GetBingImageUrlAsync();
             var client = CreateVisionClient();
